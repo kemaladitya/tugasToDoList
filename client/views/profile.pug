@@ -1,0 +1,25 @@
+extends layout
+
+block content 
+	h3 Todo Lists
+	label Task:
+	input#task(type='text')
+	label  Date:
+	input#date(type='text')
+	button#add Add
+
+
+
+	ul#addLists
+
+	if currentUser
+		button#logout LOGOUT
+	else
+		button LOGIN
+
+
+
+	script(src='/javascripts/addlist.js')
+	script(src='/javascripts/showactivity.js')
+	script(src='/javascripts/logout.js')
+	
